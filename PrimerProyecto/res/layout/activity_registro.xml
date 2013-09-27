@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegistroActivity" >
+
+    
+    <EditText 
+        android:id="@+id/ETRNombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/HRNombre"
+        />
+
+
+    <EditText 
+        android:id="@+id/ETRCorreo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/HRCorreo"
+        android:layout_below="@+id/ETRNombre"
+        />
+
+    <EditText 
+        android:id="@+id/ETRClave"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/HRClave"
+        android:layout_below="@+id/ETRCorreo"
+        android:password="true"
+        />
+
+    <EditText 
+        android:id="@+id/ETRCClave"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/HRCClave"
+        android:layout_below="@+id/ETRClave"
+        android:password="true"
+        />
+    <Button 
+        android:id="@+id/BRInsertar"
+        android:layout_below="@+id/ETRCClave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TRInsertar"
+        />
+    
+
+</RelativeLayout>

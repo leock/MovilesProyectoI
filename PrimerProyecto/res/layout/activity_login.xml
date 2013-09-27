@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity" >
+		
+    
+        
+    <TextView
+        android:id="@+id/LTVLogin"
+	    android:layout_width="fill_parent"
+	    android:hint="@string/login"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+         />
+    <EditText
+        android:layout_below="@+id/LTVLogin"
+	    android:id="@+id/LETUser"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="@string/user"
+	    />
+   
+    <EditText 
+        android:layout_below="@+id/LETUser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:id="@+id/LETClave"
+        android:password="true"
+        />
+    <Button 
+        android:layout_below="@+id/LETClave"
+        android:text="@string/LBIngresar"
+        android:id="@+id/LBIngresar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="ingresar"
+        />
+    <TextView 
+        android:id="@+id/LTVError"
+        android:layout_toRightOf="@+id/LBIngresar"
+        android:layout_alignBaseline="@+id/LBIngresar"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>
